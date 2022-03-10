@@ -21,6 +21,7 @@
  
 
 #include "config.h"
+#include <string>
 #include "TextBreakIterator.h"
 #include "TextEncoding.h"
 #include "TextBoundaries.h"
@@ -141,7 +142,8 @@ TextBreakIterator* acquireLineBreakIterator(StringView string, const AtomicStrin
         
     if (priorContextLength > 0)
     {
-        const UChar* stringUChar = string.upconvertedCharacters().get();
+		StringView::UpconvertedCharacters stringU = string.upconvertedCharacters();
+        const UChar* stringUChar = stringU.get();
         int stringLength = std::char_traits<UChar>::length(stringUChar);
         int totalLength = stringLength + priorContextLength;
         UChar* totalString = new UChar[totalLength];

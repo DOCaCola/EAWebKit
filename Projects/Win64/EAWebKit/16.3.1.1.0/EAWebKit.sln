@@ -118,14 +118,4 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		arguments = 
-		maxcpus = 40
-		jobs = 32
-		profile = C:\packages\vstomaketools\2.06.08\config\profile.xml
-		vstomakefile = C:\packages\vstomaketools\2.06.08\bin\vsToMakefile.exe
-		nant-command-line = "C:/packages/Framework/7.04.01/bin/nant.exe"  "-masterconfigfile:.\masterconfig.xml" "-buildfile:.\EAWebKit.build" -D:package.configs="pc64-vc-dev-debug pc64-vc-dev-opt"  "-buildroot:.\Projects\Win64"  "slnruntime"
-		nant-current-directory = c:\packages\EAWebKitTemp\16.3.1.1.0
-		framework-bin-dir = C:\packages\Framework\7.04.01\bin
-	EndGlobalSection
 EndGlobal

@@ -1691,13 +1691,13 @@ void InitFontSystem(void)
                 return;    
     
             spGlyphCache->SetAllocator(EA::Allocator::ICoreAllocator::GetDefaultAllocator());
-            spGlyphCache->SetOption(EA::Text::GlyphCache::kOptionDefaultSize, 512);
+            spGlyphCache->SetOption(EA::Text::GlyphCache::kOptionDefaultSize, 4096);
             spGlyphCache->SetOption(EA::Text::GlyphCache::kOptionDefaultFormat, format);
         
             // This kOptionAutoTextureCreate setting allows the glyph cache to allocate more pages if
             // it runs out of space and nMaxTextureCount > 1. 
             spGlyphCache->SetOption(EA::Text::GlyphCache::kOptionAutoTextureCreate, true);  
-            spGlyphCache->Init(8, 1); // (nMaxTextureCount = 8, nInitialTextureCount = 1) 
+            spGlyphCache->Init(32, 1); // (nMaxTextureCount = 8, nInitialTextureCount = 1) 
         }
         
         if(!spFontServer)

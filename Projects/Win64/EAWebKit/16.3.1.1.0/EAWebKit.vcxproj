@@ -85,7 +85,7 @@
       <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\WinMM.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Gdi32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\User32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\advapi32.lib";"winmm.lib";"gdi32.lib";"ole32.lib";"user32.lib";"advapi32.lib";"shell32.lib";"shlwapi.lib";"version.lib";"ws2_32.lib";"Iphlpapi.lib";</AdditionalDependencies>
+      <AdditionalDependencies>"winmm.lib";"gdi32.lib";"ole32.lib";"user32.lib";"advapi32.lib";"shell32.lib";"shlwapi.lib";"version.lib";"ws2_32.lib";"Iphlpapi.lib"</AdditionalDependencies>
       <AdditionalLibraryDirectories>"$(VSInstallDir)\VC\ATLMFC\LIB\amd64";"$(VSInstallDir)\VC\LIB\amd64";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\ucrt\x64";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64";"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\Lib\um\x64"</AdditionalLibraryDirectories>
       <AdditionalOptions>-ignore:4089 </AdditionalOptions>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
@@ -174,8 +174,8 @@
       <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\WinMM.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\Gdi32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\User32.lib";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64\advapi32.lib";"winmm.lib";"gdi32.lib";"ole32.lib";"user32.lib";"advapi32.lib";"shell32.lib";"shlwapi.lib";"version.lib";"ws2_32.lib";"Iphlpapi.lib";</AdditionalDependencies>
-      <AdditionalLibraryDirectories>"$(VSInstallDir)\VC\ATLMFC\LIB\amd64";"$(VSInstallDir)\VC\LIB\amd64";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\ucrt\x64";"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17134.0\um\x64";"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\Lib\um\x64"</AdditionalLibraryDirectories>
+      <AdditionalDependencies>"winmm.lib";"gdi32.lib";"ole32.lib";"user32.lib";"advapi32.lib";"shell32.lib";"shlwapi.lib";"version.lib";"ws2_32.lib";"Iphlpapi.lib"</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(VSInstallDir)\VC\ATLMFC\LIB\amd64;$(VSInstallDir)\VC\LIB\amd64;$(WindowsSdkDir)\Lib\10.0.17134.0\ucrt\x64;$(WindowsSdkDir)\Lib\10.0.17134.0\um\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6\Lib\um\x64</AdditionalLibraryDirectories>
       <AdditionalOptions>-ignore:4089 </AdditionalOptions>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>

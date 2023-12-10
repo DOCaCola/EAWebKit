@@ -1,3 +1,5 @@
+This project is now archived. It has been superseeded by [EAWebKit-DC](https://github.com/DOCaCola/EAWebKit-DC)
+
 # EA WebKit 
 
 This is an unofficial mirror of EAWebKit.
